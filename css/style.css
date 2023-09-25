@@ -1,0 +1,13 @@
+* { /* styles all elements possible */
+    margin: 0;
+}
+
+body {
+    font-family: "Raleway", Helvetica, sams-serif;
+    color: #444444; /* colors the elements who have no color by themselves */
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
