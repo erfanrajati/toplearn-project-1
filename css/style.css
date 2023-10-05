@@ -15,7 +15,9 @@ a {
 }
 
 .header {
-    background-color: #444444;
+    background-image: url(../images/dark_tint.png),
+        url(../images/bokeh_car_lights_bg.jpg);
+    background-position: center;
 }
 
 .top-navbar {
@@ -35,12 +37,13 @@ a {
 } */
 
 .navbar-items li{
-    display: inline;
+    display: inline; /*to make items horizontal*/
     padding: 0 10px;
 }
 
 .navbar-items li a:hover {
     color: #ffffff;
+    cursor: pointer;;
 
 }
 
@@ -48,3 +51,55 @@ a {
     transition: color .4s ease-in-out;
 }
 
+.btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 0;
+    cursor: pointer;
+    text-align: center;
+    font-size: 1.5vw;
+    color: #ffffff;
+}
+
+/*it is possible to have two class names for a single HTML tag
+to do so you just say: class="btn btn-gray" 
+the second one will override the first one*/
+.btn-gray {
+    background-color: #ffffff;
+    color: #444444 !important; 
+    /*to prevent unwanted behavior if code order was changed
+    do this for the ones who must override*/
+}
+
+.btn-big {
+    font-size: 2.3vw !important;
+}
+
+.btn-blue {
+    background-color: #3cadd4;
+    color: #ffffff !important;
+}
+
+.btn-dark {
+    background-color:#383b43;
+    color: #ffffff !important;
+}
+
+.banner-content {
+    text-align: center;
+    color: #ffffff;
+    padding: 150px 0;
+}
+
+.banner-content h1 {
+    font-size: 5vw;
+    margin-bottom: 70px;
+}
+
+.banner-content p {
+    font-size: 2.5vw;
+    margin-bottom: 50px;
+    /*can use both line-height and margin bottom
+    line height makes distance on both tom and bottom though*/
+    
+}
