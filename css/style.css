@@ -1,55 +1,34 @@
 @import url(font-awesome.min.css);
 
+
+@font-face {
+    font-family: "Raleway";
+    src: url(../fonts/Raleway/Raleway-VariableFont_wght.ttf);
+}
+
+
 * { /* styles all elements possible */
     margin: 0;
 }
 
+
 body {
-    font-family: "Raleway", Helvetica, sams-serif;
+    font-family: Raleway, Helvetica, sams-serif;
     color: #444444; /* colors the elements who have no color by themselves */
 }
+
+
+h1, 
+h2 {
+    font-family: Helvetica;
+}
+
 
 a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.5);
 }
 
-.header {
-    background-image: url(../images/dark_tint.png),
-        url(../images/bokeh_car_lights_bg.jpg);
-    background-position: center;
-}
-
-.top-navbar {
-    padding: 40px;
-}
-
-.top-navbar h1 {
-    float: left;
-}
-
-.navbar-items {
-    text-align: right;
-}
-
-/* .navbar-items #transit h1 {
-    text-align: left;
-} */
-
-.navbar-items li{
-    display: inline; /*to make items horizontal*/
-    padding: 0 10px;
-}
-
-.navbar-items li a:hover {
-    color: #ffffff;
-    cursor: pointer;;
-
-}
-
-.navbar-items li a {
-    transition: color .4s ease-in-out;
-}
 
 .btn {
     padding: 10px 20px;
@@ -57,9 +36,11 @@ a {
     border: 0;
     cursor: pointer;
     text-align: center;
-    font-size: 1.5vw;
+    font-size: 16px;
     color: #ffffff;
+    font-family: "Raleway";
 }
+
 
 /*it is possible to have two class names for a single HTML tag
 to do so you just say: class="btn btn-gray" 
@@ -71,35 +52,108 @@ the second one will override the first one*/
     do this for the ones who must override*/
 }
 
+
 .btn-big {
-    font-size: 2.3vw !important;
+    font-size: 20px !important;
+    padding: 17px 35px;
 }
+
 
 .btn-blue {
     background-color: #3cadd4;
     color: #ffffff !important;
 }
 
+
 .btn-dark {
     background-color:#383b43;
     color: #ffffff !important;
 }
 
+
+/*---------------- Styling of Header part -----------------*/
+
+
+.header {
+    background-image: url(../images/dark_tint.png),
+        url(../images/bokeh_car_lights_bg.jpg);
+    background-position: center;
+}
+
+
+.top-navbar {
+    padding: 40px;
+}
+
+
+.top-navbar h1 {
+    float: left;
+}
+
+
+.navbar-items {
+    text-align: right;
+}
+
+
+/* .navbar-items #transit h1 {
+    text-align: left;
+} */
+
+
+.navbar-items li{
+    display: inline; /*to make items horizontal*/
+    padding: 0 10px;
+}
+
+
+.navbar-items li a:hover {
+    color: #ffffff;
+    cursor: pointer;;
+
+}
+
+
+.navbar-items li a {
+    transition: color .4s ease-in-out;
+}
+
+
 .banner-content {
     text-align: center;
     color: #ffffff;
-    padding: 150px 0;
+    padding: 130px 0;
 }
 
+
 .banner-content h1 {
-    font-size: 5vw;
+    font-size: 60px;
     margin-bottom: 70px;
 }
 
+
 .banner-content p {
-    font-size: 2.5vw;
+    font-size: 22px;
     margin-bottom: 50px;
     /*can use both line-height and margin bottom
     line height makes distance on both tom and bottom though*/
     
+}
+
+
+/*---------------- Styling of Main part -----------------*/
+
+.services .container {
+    background-color: #9f9f9f;
+}
+
+
+.services-content ul {
+
+}
+
+
+.services-content ul li {
+    display: inline;
+    padding: 0 10px;
 }
