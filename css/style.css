@@ -148,12 +148,18 @@ the second one will override the first one*/
 }
 
 
-.services-content ul {
+/* .services-content ul {
 
-}
+} */
 
 
 .services-content ul li {
     display: inline;
-    padding: 0 10px;
+    padding: 10px 10px;
 }
+
+
+/* .services-content ul li div{
+    height: auto;
+    width: 50px;
+} */
