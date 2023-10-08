@@ -141,25 +141,31 @@ the second one will override the first one*/
 }
 
 
-/*---------------- Styling of Main part -----------------*/
+/*---------------- Styling of Main part: Services -----------------*/
 
-.services .container {
-    background-color: #9f9f9f;
+.services {
+    background-color: #e1e1e1;
+    border-bottom: 1px, #444444;
+    border-top: 1px, #444444;
+    padding: 100px;
+    text-align: center;
 }
 
-
-/* .services-content ul {
-
-} */
-
-
-.services-content ul li {
-    display: inline;
-    padding: 10px 10px;
+.services-header {
+    margin-bottom: 50px;
 }
 
+.services-header h2 {
+    font-size: 45px;
+    color: #333333;
+    margin-bottom: 20px;
+}
 
-/* .services-content ul li div{
-    height: auto;
-    width: 50px;
-} */
+.services-header p {
+    font-size: 22px;
+}
+
+.icon:before {
+    font-family: FonAwesome;
+    font-style: normal;
+}
