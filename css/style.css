@@ -144,10 +144,10 @@ the second one will override the first one*/
 /*---------------- Styling of Main part: Services -----------------*/
 
 .services {
-    background-color: #e1e1e1;
+    background-color: #e9e8e8;
     border-bottom: 1px, #444444;
     border-top: 1px, #444444;
-    padding: 100px;
+    padding: 100px 30px;
     text-align: center;
 }
 
@@ -165,7 +165,44 @@ the second one will override the first one*/
     font-size: 22px;
 }
 
-.icon:before {
-    font-family: FonAwesome;
-    font-style: normal;
+.services-content::after,
+.services-content::before {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.services-content > * {
+    float: left;
+}
+
+.box {
+    width: calc(calc(100% / 3) - 82px);
+    padding: 70px 30px;
+    margin: 10px;
+    background-color: #ffffff;
+    border: solid 1px #444444;
+    border-radius: 5px;
+}
+
+.box > * {
+    color: #a5a5a5;
+    margin: 10px 5px;
+}
+
+.box h4 {
+    font-size: 25px;
+    color: #333333;
+}
+
+.box p {
+    font-size: 15px;
+}
+
+.icon {
+    background-color: #444444;
+    width: 40px;
+    height: 40px;
+    padding: 30px;
+    border-radius: 100%;
 }
