@@ -145,8 +145,6 @@ the second one will override the first one*/
 
 .services {
     background-color: #e9e8e8;
-    border-bottom: 1px, #444444;
-    border-top: 1px, #444444;
     padding: 100px 30px;
     text-align: center;
 }
