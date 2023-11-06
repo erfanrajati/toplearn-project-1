@@ -145,7 +145,7 @@ the second one will override the first one*/
 
 .services {
     background-color: #e9e8e8;
-    padding: 100px 30px;
+    padding: 100px 0;
     text-align: center;
 }
 
@@ -168,6 +168,10 @@ the second one will override the first one*/
     content: '';
     display: block;
     clear: both;
+}
+
+.services-content {
+    margin: 0 50px;
 }
 
 .services-content > * {
@@ -203,4 +207,13 @@ the second one will override the first one*/
     height: 40px;
     padding: 30px;
     border-radius: 100%;
+}
+
+@media only screen and (max-width: 800px) {
+    .box {
+        display: block;
+        width: 100%;
+        margin: 10px 0;
+        padding: 60px 0;
+    }
 }
